@@ -122,7 +122,7 @@ body {
     const second = document.querySelector('.second')
     const min = document.querySelector('.min')
     const hour = document.querySelector('.hour')
-    const wr = document.querySelector('.hour')
+    const wr = document.querySelector('.wr')
     const sec_title = document.querySelector('.sec_title')
     const min_title = document.querySelector('.min_title')
     const hr_title = document.querySelector('.hr_title')
@@ -133,7 +133,7 @@ body {
       let minper = Math.round(data.getMinutes() /60 *100)// (deg = 360/60)
       let hourper = Math.round(data.getHours() /24 *100)// (deg = 360/12)
       let wrper = Math.round(((data.getHours()*3600 + data.getMinutes()*60 +data.getSeconds() - 9*3600) /9.5/3600)*100 *10)/10
-	    second.style.width = `${wrper}%`
+	    wr.style.width = `${wrper}%`
       second.style.width = `${minper}%`
       min.style.width = `${minper}%`
       hour.style.width = `${hourper}%`
