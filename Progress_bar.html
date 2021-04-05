@@ -134,7 +134,7 @@ body {
       let hourper = Math.round(data.getHours() /24 *100)// (deg = 360/12)
       let wrper = Math.round(((data.getHours()*3600 + data.getMinutes()*60 +data.getSeconds() - 9*3600) /9.5/3600)*100 *10)/10
 	    wr.style.width = `${wrper}%`
-      second.style.width = `${minper}%`
+      second.style.width = `${secondper}%`
       min.style.width = `${minper}%`
       hour.style.width = `${hourper}%`
       sec_title.textContent=`${secondper}%`
